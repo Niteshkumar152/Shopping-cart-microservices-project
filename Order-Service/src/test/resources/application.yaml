@@ -19,12 +19,11 @@ spring:
             provider: okta
             authorization-grant-type: client_credentials
             scope: internal
-            client-id: 0oa70uffreIugV7y55d7
-            client-secret: JaD6_Rg2amK_R7wk70wD2vONMKvUiagHSsoNNok7
+            client-id: ###
+            client-secret: ###
         provider:
           okta:
             issuer-uri: https://dev-73944418.okta.com/oauth2/default
-
 
 eureka:
   client:

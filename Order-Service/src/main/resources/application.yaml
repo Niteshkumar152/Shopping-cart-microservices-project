@@ -21,16 +21,16 @@ spring:
         jwt:
           issuer-uri: https://dev-73944418.okta.com/oauth2/default
       client:
-          registration:
-            internal-client:
-              provider: okta
-              authorization-grant-type: client_credentials
-              scope: internal
-              client-id: 0oa70uffreIugV7y55d7
-              client-secret: JaD6_Rg2amK_R7wk70wD2vONMKvUiagHSsoNNok7
-          provider:
-            okta:
-              issuer-uri: https://dev-73944418.okta.com/oauth2/default
+        registration:
+          internal-client:
+            provider: okta
+            authorization-grant-type: client_credentials
+            scope: internal
+            client-id: ###
+            client-secret: ###
+        provider:
+          okta:
+            issuer-uri: https://dev-73944418.okta.com/oauth2/default
 
 resilience4j:
   circuitbreaker:
@@ -44,8 +44,6 @@ resilience4j:
         permitted-number-of-calls-in-half-open-state: 3
         sliding-window-size: 10
         sliding-window-type: COUNT_BASED
-
-
 #eureka:
 #  instance:
 #    prefer-ip-address: true
